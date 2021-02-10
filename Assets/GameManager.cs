@@ -5,10 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 public class GameManager : MonoBehaviour
 {
-public float health;
-public int golds ; 
-public Text goldsText;
-public Text healthPlayer;
+
 public AudioClip punch;
 public AudioClip Hit;
 private AudioSource source; 
@@ -16,11 +13,7 @@ private AudioSource source;
 
     void Start()
     {
-       golds = 100;
-       goldsText.text= golds.ToString();
        
-       health = 5;
-       healthPlayer.text = health.ToString();
        source = GetComponent<AudioSource>();
        
     }
