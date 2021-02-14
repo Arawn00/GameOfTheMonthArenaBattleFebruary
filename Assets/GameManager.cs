@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
 
 public AudioClip punch;
-public AudioClip Hit;
+public AudioClip dammagePlayer;
 private AudioSource source; 
 
 
@@ -31,7 +31,7 @@ private AudioSource source;
     }
     public void SoundHit()
     {
-        source.clip = Hit;
+        source.clip = dammagePlayer;
         source.Play();
     }
 }

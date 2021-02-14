@@ -24,6 +24,8 @@ public class EnnemyHealth : MonoBehaviour
       {
       Instantiate(Fx_Punch,transform.position,Quaternion.identity);
       Destroy(gameObject);
+      GameObject.Find("GameManager").GetComponent<Score>().PlayerScore(1);
+
       }  
   }
 
